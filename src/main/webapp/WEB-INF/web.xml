@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+	 <servlet>
+		   <servlet-name>addMyGame</servlet-name>
+		   <servlet-class>com.game.servlet.MyGameInsertServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+		   <servlet-name>addMyGame</servlet-name>
+		   <url-pattern>/addMyGame</url-pattern>
+	 </servlet-mapping>
+	 <servlet>   
+		   <servlet-name>LogoutServlet</servlet-name>  
+		   <servlet-class>com.game.servlet.LogoutServlet</servlet-class>  
+	 </servlet>  
+	 <servlet-mapping>  
+		   <servlet-name>LogoutServlet</servlet-name>  
+		   <url-pattern>/Logout</url-pattern>  
+	 </servlet-mapping> 
+	 <servlet>   
+		   <servlet-name>MyGameViewServlet</servlet-name>  
+		   <servlet-class>com.game.servlet.MyGameViewServlet</servlet-class>  
+	 </servlet>  
+	 <servlet-mapping>  
+		   <servlet-name>MyGameViewServlet</servlet-name>  
+		   <url-pattern>/my_game</url-pattern>  
+	 </servlet-mapping>  
+	 <servlet>   
+		   <servlet-name>MyGameEditServlet</servlet-name>  
+		   <servlet-class>com.game.servlet.MyGameEditServlet</servlet-class>  
+	 </servlet>  
+	 <servlet-mapping>  
+		   <servlet-name>MyGameEditServlet</servlet-name>  
+		   <url-pattern>/editMyGame</url-pattern>  
+	 </servlet-mapping>
+	 <servlet>   
+		   <servlet-name>MyGameDeleteServlet</servlet-name>  
+		   <servlet-class>com.game.servlet.MyGameDeleteServlet</servlet-class>  
+	 </servlet>  
+	 <servlet-mapping>  
+		   <servlet-name>MyGameDeleteServlet</servlet-name>  
+		   <url-pattern>/delete_mygame</url-pattern>  
+	 </servlet-mapping>  
+	   <servlet>   
+		   <servlet-name>ShowGameServlet</servlet-name>  
+		   <servlet-class>com.game.servlet.ShowGameServlet</servlet-class>  
+	 </servlet>  
+	 <servlet-mapping>  
+		   <servlet-name>ShowGameServlet</servlet-name>  
+		   <url-pattern>/store</url-pattern>  
+	 </servlet-mapping>  
+  
+  
+  
+	<servlet> 
+	        <servlet-name>PlayerDetailsServlet</servlet-name>
+	        <servlet-class>com.game.servlet.PlayerDetailsServlet</servlet-class>
+	 </servlet>  
+	 <servlet-mapping>  
+		   <servlet-name>PlayerDetailsServlet</servlet-name>  
+		   <url-pattern>/account_player</url-pattern>  
+	 </servlet-mapping>  
+  
+  
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+         <servlet-class>com.game.servlet.LoginServlet</servlet-class>
+  	</servlet>
+    <servlet-mapping>
+          <servlet-name>LoginServlet</servlet-name>
+          <url-pattern>/log</url-pattern>
+    </servlet-mapping> 
+   <servlet>         
+   		<servlet-name>SignupServlet</servlet-name>
+        <servlet-class>com.game.servlet.SignUpServlet</servlet-class>
+	</servlet>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+       	<url-pattern>/sign</url-pattern>         
+ 	</servlet-mapping> 
+ 	 <servlet>
+            <servlet-name>update</servlet-name>
+            <servlet-class>com.game.servlet.UpdateServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+             <servlet-name>update</servlet-name>
+             <url-pattern>/update</url-pattern>
+	 </servlet-mapping>
+	<servlet>
+          <servlet-name>delete</servlet-name>
+          <servlet-class>com.game.servlet.DeleteServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+	         <servlet-name>delete</servlet-name>
+	         <url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	 <servlet>
+		<servlet-name>logindeveloperServlet</servlet-name>
+		<servlet-class>com.game.servlet.LogindeveloperServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logindeveloperServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	 
+	<servlet>
+	    <servlet-name>GameInsertServlet</servlet-name>
+	    <servlet-class>com.game.servlet.GameInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GameInsertServlet</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+	    <servlet-name>DevGameServlet</servlet-name>
+	    <servlet-class>com.game.servlet.DevGameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DevGameServlet</servlet-name>
+		<url-pattern>/games</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>UpdategameServlet</servlet-name>
+	    <servlet-class>com.game.servlet.UpdategameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>UpdategameServlet</servlet-name>
+	<url-pattern>/dupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>DeletegameServlet</servlet-name>
+	    <servlet-class>com.game.servlet.DeletegameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>DeletegameServlet</servlet-name>
+	<url-pattern>/ddelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ 
+ 	<servlet>
+         <servlet-name>adminIndex</servlet-name>
+         <servlet-class>com.game.servlet.adminLoginServlet</servlet-class>
+         </servlet>         
+         <servlet-mapping>         
+         <servlet-name>adminIndex</servlet-name>
+         <url-pattern>/adminIndex</url-pattern>
+         </servlet-mapping>         
+          <servlet>
+         <servlet-name>announcementInsert</servlet-name>
+         <servlet-class>com.game.servlet.announcementInsertServlet</servlet-class>
+         </servlet>         
+         <servlet-mapping>         
+         <servlet-name>announcementInsert</servlet-name>
+         <url-pattern>/insertAnnouncement</url-pattern>
+         </servlet-mapping>
+         <servlet>
+         <servlet-name>announcementRetrieve</servlet-name>
+         <servlet-class>com.game.servlet.announcementRetrieveServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>         
+         <servlet-name>announcementRetrieve</servlet-name>
+         <url-pattern>/retrieveAnnouncement</url-pattern>
+         </servlet-mapping>                  
+         <servlet>
+         <servlet-name>autoDisplayAnnouncement</servlet-name>
+         <servlet-class>com.game.servlet.announcementRetrieveServlet</servlet-class>
+         </servlet>         
+         <servlet-mapping>         
+         <servlet-name>autoDisplayAnnouncement</servlet-name>
+         <url-pattern>/homeWithDefultAnnouncement</url-pattern>
+         </servlet-mapping>   
+         <servlet>
+         <servlet-name>autoDisplayAnnouncement2</servlet-name>
+         <servlet-class>com.game.servlet.announcementShowServlet</servlet-class>
+         </servlet>         
+         <servlet-mapping>         
+         <servlet-name>autoDisplayAnnouncement2</servlet-name>
+         <url-pattern>/home</url-pattern>
+         </servlet-mapping>  
+         <servlet>
+         <servlet-name>viewToUpdate</servlet-name>
+         <servlet-class>com.game.servlet.announcementUpdateRetrievingPartServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>         
+         <servlet-name>viewToUpdate</servlet-name>
+         <url-pattern>/viewAnnouncementToUpdate</url-pattern>
+         </servlet-mapping>
+         <servlet>
+         <servlet-name>updateAnnouncement</servlet-name>
+         <servlet-class>com.game.servlet.announcementUpdateServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>         
+         <servlet-name>updateAnnouncement</servlet-name>
+         <url-pattern>/updateAnnouncement</url-pattern>
+         </servlet-mapping>         
+          <servlet>
+         <servlet-name>viewToDelete</servlet-name>
+         <servlet-class>com.game.servlet.announcementDeleteRetrievingPartServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>         
+         <servlet-name>viewToDelete</servlet-name>
+         <url-pattern>/viewToDelete</url-pattern>
+         </servlet-mapping>
+          <servlet>
+         <servlet-name>deleteAnnouncement</servlet-name>
+         <servlet-class>com.game.servlet.announcementDeleteServlet</servlet-class>
+         </servlet>         
+         <servlet-mapping>         
+         <servlet-name>deleteAnnouncement</servlet-name>
+         <url-pattern>/deleteAnnouncement</url-pattern>
+         </servlet-mapping>  
+         <servlet>
+         <servlet-name>displayAll</servlet-name>
+         <servlet-class>com.game.servlet.announcementDisplayAllServlet</servlet-class>
+         </servlet>         
+         <servlet-mapping>         
+         <servlet-name>displayAll</servlet-name>
+         <url-pattern>/displayAll</url-pattern>
+         </servlet-mapping>
+ 
+ 
+ 
+	<welcome-file-list>
+	    <welcome-file>GameLog.jsp</welcome-file>
+	    <welcome-file>store</welcome-file>
+  	</welcome-file-list>
+</web-app>
+		
